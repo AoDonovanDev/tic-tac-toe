@@ -1,0 +1,58 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.gameboard{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+}
+.gamegrid{
+    display: grid;
+    height: 100px;
+    width: 100px;
+}
+.newGame{
+    display: flex;
+    margin-top: 40px;
+}
+#g0{
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+#g1{
+    border-bottom: 1px solid black;
+    border-right:  1px solid black;
+}
+#g2{
+    border-bottom: 1px solid black;
+}
+#g3{
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+#g4{
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+#g5{
+    border-bottom: 1px solid black;
+}
+#g6{
+    border-right: 1px solid black;
+}
+#g7{
+    border-right: 1px solid black;
+}
+#x{
+   height: 100%;
+   width: 100%;
+}
+.marker{
+    height: 100%;
+    width: 100%;
+}
