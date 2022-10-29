@@ -56,3 +56,35 @@
     height: 100%;
     width: 100%;
 }
+.hidden{
+    visibility: hidden;
+}
+.winnerMark{
+    height: 10%;
+    width: 10%;
+}
+.winnerCard{
+    background-color: aliceblue;
+    box-shadow: inset;
+    border: 1px solid gainsboro;
+    border-radius: 8px;
+    width: 40%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+}
+#winner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#winnerBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 23%;
+    bottom: 50%;
+}

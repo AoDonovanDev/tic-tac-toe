@@ -73,9 +73,22 @@ function congratulateWinner(marker){
     for(let i = 0; i < gameBoard.board.length; i++){
         gameBoard.board[i] = "---";
     }
+    let wrapper = document.createElement("div");
+    let winnerTxt = document.createElement("h2");
+    winnerTxt.innerHTML = marker + " wins!";
+    wrapper.classList.add("winnerCard");
+    wrapper.setAttribute("id", "winInfo");
+    let winnerMark = new Image();
+    winnerMark.src = "images/"+marker+"mark.svg";
+    winnerMark.classList.add("winnerMark");
+    wrapper.appendChild(winnerTxt);
+    wrapper.appendChild(winnerMark);
+    document.getElementById("winner").appendChild(wrapper);
+    document.getElementById("winnerBox").classList.remove("hidden");
 }
 document.getElementById("newGame").addEventListener("click", gameBoard.resetBoard);
 document.getElementById("newGame").addEventListener("click", gameBoard.clearDisplay);
-class bingus{
-    
+document.getElementById("newGame").addEventListener("click", clearWin);
+function clearWin(){
+    document.getElementById("winInfo").remove();
 }
