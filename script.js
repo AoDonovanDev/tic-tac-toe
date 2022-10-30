@@ -66,6 +66,7 @@ function winConditions(marker){
         [check[2],check[5],check[8]].every(checkWin)||
         [check[1],check[4],check[7]].every(checkWin)){
             congratulateWinner(marker)
+            console.log(this);
         }
 }
 function congratulateWinner(marker){
